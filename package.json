@@ -65,5 +65,10 @@
     "pnpm": ">=8.1.0"
   },
   "author": "kzidaitou",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/kevinlinm/kz-ui-vue",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinlinm/kz-ui-vue.git"
+  }
 }
