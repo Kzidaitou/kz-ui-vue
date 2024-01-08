@@ -1,0 +1,69 @@
+{
+  "name": "kz-ui-vue",
+  "private": true,
+  "version": "0.0.1",
+  "description": "kzidaitou的组件库",
+  "type": "module",
+  "scripts": {
+    "i": "pnpm install",
+    "dev": "pnpm vite",
+    "ts:check": "pnpm vue-tsc --noEmit --skipLibCheck",
+    "build": "pnpm run ts:check && pnpm vite build",
+    "preview": "pnpm vite preview"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/kz-ui-vue.umd.js",
+  "module": "./dist/kz-ui-vue.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/kz-ui-vue.es.js",
+      "require": "./dist/kz-ui-vue.umd.js"
+    }
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@iconify/iconify": "^3.1.1",
+    "@iconify/vue": "^4.1.1",
+    "animate.css": "^4.1.1",
+    "element-plus": "^2.4.4",
+    "lodash-es": "^4.17.21",
+    "vue": "3.4.3",
+    "vue-types": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "^20.10.6",
+    "@types/nprogress": "^0.2.3",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "@unocss/transformer-variant-group": "^0.58.0",
+    "@vitejs/plugin-legacy": "^5.2.0",
+    "@vitejs/plugin-vue": "^5.0.2",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-define-config": "^2.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "eslint-plugin-vue": "^9.19.2",
+    "less": "^4.2.0",
+    "prettier": "^3.1.1",
+    "typescript": "5.3.3",
+    "unocss": "^0.58.3",
+    "vite": "5.0.10",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-progress": "^0.0.7",
+    "vite-plugin-purge-icons": "^0.10.0",
+    "vite-plugin-style-import": "2.0.0",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue-tsc": "^1.8.27"
+  },
+  "packageManager": "pnpm@8.11.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.1.0"
+  },
+  "author": "kzidaitou",
+  "license": "MIT"
+}
